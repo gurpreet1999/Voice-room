@@ -1,0 +1,62 @@
+/* ye humari global file he iske andar sare global css honge */
+/* v.v.i */
+/* //hum css ka basic reset ye dalte he ..ye bht jaruri he har ek project ke liye */
+
+
+html{
+
+
+font-size: 16px;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,p,ol,ul,input,textarea{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  
+}
+
+ol,ul{
+  list-style: none
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+
+  font-family: 'Nunito', sans-serif;
+  background:#121212;
+  color: #fff;
+}
+
+
+.container{
+  width: 1200px;
+  max-width: 90%;
+  margin:0 auto
+}
+
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px); 
+  /* 140px bavbar ki space he */
+}
+
+
+
+
+button{
+  border:none;
+  outline: none;
+}

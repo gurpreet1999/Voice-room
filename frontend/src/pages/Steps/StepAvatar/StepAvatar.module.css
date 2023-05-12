@@ -1,0 +1,44 @@
+.subHeading {
+    color: #c4c5c5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatarWrapper {
+    width: 110px;
+    height: 110px;
+    border: 6px solid #0077ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* //this is best configuration---choose for instagram  */
+/* this configuration */
+
+
+.avatarImage {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+
+
+.avatarInput {
+    display: none;
+}
+
+
+/* //label by default ...display inline hota he..so humara vertical margin work nai kregi
+so we havr to do display--inline-block */
+
+.avatarLabel {
+    color: #0077ff;
+    margin: 30px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
