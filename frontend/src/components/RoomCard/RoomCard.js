@@ -1,11 +1,15 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom"
+
 
 const RoomCard = ({room}) => {
+
+    const navigate=useNavigate()
     
   return (
     <div
     onClick={() => {
-        history.push(`/room/${room.id}`);
+        navigate(`/room/${room.id}`);
     }}
     className={styles.card}
 >

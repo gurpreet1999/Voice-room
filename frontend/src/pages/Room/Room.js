@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useWebRTC } from '../../hooks/useWebRTC';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Room = () => {
+
+    const {id:roomId}=useParams()
+    const {user}=useSelector(state=>state.auth)
+
+ const {client,provideRef}=useWebRTC(roomId,user)
+
+
   return (
     <div>
     <div className="container">
@@ -41,6 +51,11 @@ const Room = () => {
                                     provideRef(instance, client.id);
                                 }}
                             />
+                            {/* ref ke andar variable vi de sakte and function vi de sakte he */}
+                            {/* function ke andar hume recieve ho jayega--means..ye funcyon hume callback deti he jiske andar hume curremnt 
+                             audio element ka instance mil jata he */}
+
+
                             <button
                                 onClick={() =>
                                     handleMuteClick(client.id)

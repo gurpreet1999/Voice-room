@@ -30,10 +30,12 @@ const Navigation = () => {
    <nav className={`${styles.navbar} container ` }  >
     <Link to={"/"} className={styles.brandStyle} >
         <img src="/images/logo.png"  alt='logo'/>
-        <span className={styles.logotext} >Codershouse</span>
+        <span className={styles.logotext} >Codershouse</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     </Link>
     {isAuth && (
-                <div className={styles.navRight}>
+              
+              
+             <div className={styles.navRight}>
                     <h3>{user?.name}</h3>
                     <Link to="/">
                         <img
